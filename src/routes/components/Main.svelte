@@ -12,7 +12,7 @@
     import { Button, Modal, GradientButton } from 'flowbite-svelte';
     import { writable } from "svelte/store";
     import { slide, fly } from "svelte/transition";
-	import { ProfileCardOutline, BookOpenOutline } from "flowbite-svelte-icons";
+	import { ProfileCardOutline, BookOpenOutline, GithubSolid } from "flowbite-svelte-icons";
 
 	const URL = import.meta.env.VITE_URL;
 
@@ -331,6 +331,16 @@
 							<div class="button-inside">
 								<ProfileCardOutline/>
 								<div class="button-text">LinkedIn</div>
+							</div>
+						</a>
+					</button>
+				</div>
+				<div class="button-select">
+					<button style="cursor:pointer; color:white; border:1px solid white; border-radius: 5px; padding: 1rem;">
+						<a href="https://github.com/Rehaan12345" target="_blank">
+							<div class="button-inside">
+								 <GithubSolid class="shrink-0 h-6 w-6" />
+								 <div class="button-text">GitHub</div>
 							</div>
 						</a>
 					</button>
