@@ -248,14 +248,31 @@
 	}
 
     .buttons-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 1rem;
 		gap: 2rem;
 		margin-bottom: 4rem;
-    }
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 900px) {
+		.buttons-wrapper {
+			gap: 1rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.buttons-wrapper {
+			flex-direction: column;
+			gap: 0.75rem;
+			margin-bottom: 1rem;
+			padding-top: 0.5rem;
+		}
+	}
 
 	.button-inside {
 		display: flex;
