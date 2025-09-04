@@ -388,26 +388,3 @@
 		</div>
     </div>
 </div>
-
-
-
-<!-- 
-
-<div class="mainwrapper">
-    <div class="headerwrapper">
-        <div class="rehaantext">
-            <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                Rehaan Anjaria
-            </h1>
-            <h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">
-                - 18 years old
-            </h3>
-            <TableInfo></TableInfo>
-        </div>
-        <div class="profileimgwrapper">
-            <img class="profilepic" src="https://firebasestorage.googleapis.com/v0/b/droneworks-14880.appspot.com/o/goodpfp.png?alt=media&token=d203dde8-d9ac-4101-a96f-0bacad845d0f" alt="Rehaan Anjaria"/>
-        </div>
-    </div>
-    <Projects></Projects>
-
-</div> -->
