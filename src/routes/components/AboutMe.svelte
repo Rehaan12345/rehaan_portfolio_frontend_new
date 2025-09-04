@@ -93,7 +93,7 @@
     max-width: 90%;
   }
   .quoteimgwrapper .rehaanimg {
-    max-width: 120px;
+    max-width: 200px;
   }
 }
 
@@ -103,7 +103,7 @@
     font-size: 1rem;
   }
   .quoteimgwrapper .rehaanimg {
-    max-width: 100px;
+    max-width: 200px;
   }
 }
 	.rehaanimg {

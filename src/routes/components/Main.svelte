@@ -7,6 +7,7 @@
     import OtherProjects from "./OtherProjects.svelte";
     import Contact from "./Contact.svelte";
     import ShortBio from "./ShortBio.svelte";
+	import Programming from "./Programming.svelte";
     import Nav from "./Nav.svelte";
     import { Section, Schedule, ScheduleItem } from 'flowbite-svelte-blocks';
     import { Button, Modal, GradientButton } from 'flowbite-svelte';
@@ -366,9 +367,13 @@
 
         </div>
 
-		<div id="Skills">
-        	<Skills></Skills>
+		<div id="Programming">
+        	<Programming></Programming>
 		</div>
+
+		<!-- <div id="Skills">
+        	<Skills></Skills>
+		</div> -->
 
 		<div id="Projects">
         	<Projects></Projects>

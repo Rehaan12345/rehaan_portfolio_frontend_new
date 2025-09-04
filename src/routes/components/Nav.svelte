@@ -71,7 +71,7 @@
     {#if open}
         <div class="nav-els" transition:fly={{ y: -15 }}>
             {#each collections as c}
-                {#if c != "OtherProjects"}
+                {#if c != "OtherProjects" && c != "Skills"}
                 <div class="nav-el">
                     <a href="#{c}">{c}</a>
                 </div>
