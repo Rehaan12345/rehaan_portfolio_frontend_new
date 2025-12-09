@@ -10,7 +10,18 @@
 
 <style>
 	main {
-        background: linear-gradient(to bottom, #000000 0%, #EB5757 100%);
+		background: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #334155 100%);
+		min-height: 100vh;
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	* {
+		scroll-behavior: smooth;
+	}
+
+	html {
+		scroll-behavior: smooth;
 	}
 </style>
 

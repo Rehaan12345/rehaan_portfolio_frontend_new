@@ -32,31 +32,45 @@
     .nav-wrapper {
         position: fixed;
         z-index: 9999;
+        top: 1rem;
+        left: 1rem;
     }
 
     .ham-wrapper {
         z-index: 10;
+        margin-bottom: 0.5rem;
     }
 
     .nav-els {
-        border-left: .5px solid rgb(191, 191, 191);
-        /* border-bottom: .5px solid rgb(191, 191, 191); */
-        border-radius: 10px;
-        padding: 1rem;
-        margin-left: 1.5rem;
+        backdrop-filter: blur(20px);
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        min-width: 200px;
     }
 
     .nav-el {
-        padding-bottom: .5rem;
-        font-size: larger;
+        padding: 0.75rem 0;
+        font-size: 1rem;
         color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
         cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-el a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        width: 100%;
     }
 
     .nav-el:hover {
-        border-bottom: 1px solid white;
-        transition: all 0.3s ease;    
+        transform: translateX(4px);
+        border-bottom-color: rgba(59, 130, 246, 0.6);
     }
         
 </style>
@@ -69,7 +83,7 @@
             ariaControls="nav"/>
     </div>
     {#if open}
-        <div class="nav-els" transition:fly={{ y: -15 }}>
+        <div class="nav-els" transition:fly={{ y: -15, duration: 300 }}>
             {#each collections as c}
                 {#if c != "OtherProjects" && c != "Skills"}
                 <div class="nav-el">

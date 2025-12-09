@@ -13,7 +13,7 @@
     import { Button, Modal, GradientButton } from 'flowbite-svelte';
     import { writable } from "svelte/store";
     import { slide, fly } from "svelte/transition";
-	import { ProfileCardOutline, BookOpenOutline, GithubSolid } from "flowbite-svelte-icons";
+	import { ProfileCardOutline, BookOpenOutline, GithubSolid, EnvelopeOutline } from "flowbite-svelte-icons";
 
 	const URL = import.meta.env.VITE_URL;
 
@@ -248,13 +248,26 @@
 		height: 100%;
 	}
 
+	.wholewholewrapper {
+		scroll-behavior: smooth;
+	}
+
+	.aboutmewrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+	}
+
     .buttons-wrapper {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 1rem;
-		gap: 2rem;
+		padding-top: 2rem;
+		gap: 1.5rem;
 		margin-bottom: 4rem;
 		flex-wrap: wrap;
 	}
@@ -269,47 +282,59 @@
 	@media (max-width: 600px) {
 		.buttons-wrapper {
 			flex-direction: column;
-			gap: 0.75rem;
-			margin-bottom: 1rem;
-			padding-top: 0.5rem;
+			gap: 1rem;
+			margin-bottom: 1.5rem;
+			padding-top: 1rem;
 		}
 	}
 
 	.button-inside {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-		gap: .5rem;
+		gap: 0.5rem;
 	}
 
 	.button-select {
-		transition: all 0.3s ease-in-out;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		backdrop-filter: blur(10px);
+		background: rgba(30, 41, 59, 0.4);
+		border: 1px solid rgba(148, 163, 184, 0.3);
+		box-shadow: 0 0 20px rgba(59, 130, 246, 0.2), 0 0 40px rgba(59, 130, 246, 0.1);
+		animation: gentleBounce 2s ease-in-out infinite;
+	}
+
+	@keyframes gentleBounce {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
 	}
 
 	.button-select:hover {
-		transform: scale(1.1);
-		transition: all ease-in-out 0.2s;
+		transform: translateY(-2px) scale(1.05);
+		background: rgba(59, 130, 246, 0.2);
+		border-color: rgba(59, 130, 246, 0.5);
+		box-shadow: 0 0 30px rgba(59, 130, 246, 0.4), 0 10px 25px rgba(59, 130, 246, 0.3);
+		animation: none;
 	}
 
 	.button-text {
-		font-size: larger;
+		font-size: 1.25rem;
+		font-weight: 500;
 	}
 
-	.button-text:hover {
-		border-bottom: 1px solid white;
+	.section-wrapper {
+		scroll-margin-top: 80px;
+		padding: 6rem 0;
 	}
 
-	.resumemodalwrapper {
-		/* position: fixed; */
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 50; /* keeps it above other elements */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
+	@media (max-width: 768px) {
+		.section-wrapper {
+			padding: 4rem 0;
+		}
 	}
 </style>
 
@@ -327,63 +352,52 @@
 
         <div class="aboutmewrapper">
 
-			<div id="About">
+			<div id="About" class="section-wrapper">
             	<AboutMe></AboutMe>
 			</div>
             
             <div class="buttons-wrapper">
-				<div class="button-select">
-					<!-- svelte-ignore event_directive_deprecated -->
-					<button class="resume-buttom" style="cursor:pointer; color:white; border:1px solid white; border-radius: 5px; padding: 1rem;" on:click={() => showResume.set(true)}>
-						<a href="/RehaanAnjaria.png" target="_blank">
-							<div class="button-inside">
-								<BookOpenOutline></BookOpenOutline>
-								<div class="button-text">Resume</div>
-							</div>
-						</a>
-					</button>
-				</div>
-				<div class="button-select">
-					<button style="cursor:pointer; color:white; border:1px solid white; border-radius: 5px; padding: 1rem;">
-						<a href="https://www.linkedin.com/in/rehaananjaria/" target="_blank">
-							<div class="button-inside">
-								<ProfileCardOutline/>
-								<div class="button-text">LinkedIn</div>
-							</div>
-						</a>
-					</button>
-				</div>
-				<div class="button-select">
-					<button style="cursor:pointer; color:white; border:1px solid white; border-radius: 5px; padding: 1rem;">
-						<a href="https://github.com/Rehaan12345" target="_blank">
-							<div class="button-inside">
-								 <GithubSolid class="shrink-0 h-6 w-6" />
-								 <div class="button-text">GitHub</div>
-							</div>
-						</a>
-					</button>
-				</div>
+				<a href="/RehaanAnjaria.png" target="_blank" class="button-select rounded-lg px-8 py-4 text-white no-underline">
+					<div class="button-inside">
+						<BookOpenOutline class="shrink-0 h-6 w-6"></BookOpenOutline>
+						<div class="button-text">Resume</div>
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/rehaananjaria/" target="_blank" class="button-select rounded-lg px-8 py-4 text-white no-underline">
+					<div class="button-inside">
+						<ProfileCardOutline class="shrink-0 h-6 w-6"/>
+						<div class="button-text">LinkedIn</div>
+					</div>
+				</a>
+				<a href="https://github.com/Rehaan12345" target="_blank" class="button-select rounded-lg px-8 py-4 text-white no-underline">
+					<div class="button-inside">
+						<GithubSolid class="shrink-0 h-6 w-6" />
+						<div class="button-text">GitHub</div>
+					</div>
+				</a>
+				<a href="#Contact" class="button-select rounded-lg px-8 py-4 text-white no-underline">
+					<div class="button-inside">
+						<EnvelopeOutline class="shrink-0 h-6 w-6" />
+						<div class="button-text">Contact Me</div>
+					</div>
+				</a>
             </div>
 
         </div>
 
-		<div id="Programming">
+		<div id="Programming" class="section-wrapper">
         	<Programming></Programming>
 		</div>
 
-		<!-- <div id="Skills">
-        	<Skills></Skills>
-		</div> -->
-
-		<div id="Projects">
+		<div id="Projects" class="section-wrapper">
         	<Projects></Projects>
 		</div>
 
-		<div id="Film">
+		<div id="Film" class="section-wrapper">
         	<OtherProjects></OtherProjects>
 		</div>
 
-		<div id="Contact">
+		<div id="Contact" class="section-wrapper">
         	<Contact></Contact>
 		</div>
     </div>
