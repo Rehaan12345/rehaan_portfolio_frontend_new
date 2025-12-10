@@ -31,6 +31,28 @@
 
 </script>
 
+<style>
+	/* Target the Schedule component's name with comprehensive selectors */
+	:global(.schedule-name),
+	:global([class*="schedule"] h2),
+	:global([class*="schedule"] h3),
+	:global([class*="Schedule"] h2),
+	:global([class*="Schedule"] h3),
+	:global(section[class*="schedule"] h2),
+	:global(section[class*="Schedule"] h2),
+	:global(div[class*="schedule"] h2),
+	:global(div[class*="Schedule"] h2),
+	:global([class*="schedule"] h1),
+	:global([class*="Schedule"] h1),
+	:global([class*="schedule"] [class*="title"]),
+	:global([class*="Schedule"] [class*="title"]) {
+		background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%) !important;
+		-webkit-background-clip: text !important;
+		-webkit-text-fill-color: transparent !important;
+		background-clip: text !important;
+	}
+</style>
+
 {#if $ready}
 
     <Schedule scheduleName="Rehaan Anjaria">

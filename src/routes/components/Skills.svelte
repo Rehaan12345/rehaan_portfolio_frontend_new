@@ -24,8 +24,14 @@
 <style>
 	.title-text {
 		margin-left: 5%;
-		color: white;
-		font-size: xx-large;
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 2rem;
+		background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 
 	.card-contents {
