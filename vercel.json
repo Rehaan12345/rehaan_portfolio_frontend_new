@@ -8,14 +8,12 @@
 
 	"headers": [
 		{
-			"//": "SvelteKit content-hashes everything under _app/immutable, so these filenames change whenever their contents do. They can safely be cached forever.",
 			"source": "/_app/immutable/(.*)",
 			"headers": [
 				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
 			]
 		},
 		{
-			"//": "Images are not content-hashed, so they get a shorter TTL but may be served stale while revalidating.",
 			"source": "/images/(.*)",
 			"headers": [
 				{
