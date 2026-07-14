@@ -1,0 +1,69 @@
+[
+  {
+    "id": "AnRlXe8heB4C3hDnuwun",
+    "title": "BosDroneWorks",
+    "github-link-frontend": "https://github.com/Rehaan12345/droneworks_frontend_latest",
+    "github-link-backend": "https://github.com/Rehaan12345/droneworks_backend",
+    "website": "https://www.bosdroneworks.com/",
+    "about": "This website is the original portfolio website for my aerial media business, BosDroneWorks, meant to show the work that we do to potential clients. I also used SvelteKit’s built in SEO-optimizations to help our marketability. This site was made with a SvelteKit frontend, FastAPI backend, and Firebase database.",
+    "images": [
+      "/images/bosdroneworks-0.webp",
+      "/images/bosdroneworks-1.webp",
+      "/images/bosdroneworks-2.webp"
+    ]
+  },
+  {
+    "id": "CoRoInXpXYaEOMxrLesu",
+    "title": "Kumu web",
+    "github-link-frontend": "https://github.com/Rehaan12345/kumu_project_frontend_latest",
+    "github-link-backend": "https://github.com/Rehaan12345/kumu_project_backend",
+    "website": " ",
+    "about": "This is an internal tool made for the city of Cambridge to streamline the way data on the website FindItCambridge.com and the city’s Mental Health Resource Map is updated. Prior to this tool, data was changed across two spreadsheets and on the map software of kumu.io, which was a very time-consuming process. I made this website after speaking to the project lead in the summer of 2024, and worked with him throughout the summer to create an easily-to-use UI. This site was made with SvelteKit frontend, FastAPI backend, Firebase database, and the Google Spreadsheets API.",
+    "images": [
+      "/images/kumu-web-0.webp",
+      "/images/kumu-web-1.webp",
+      "/images/kumu-web-2.webp"
+    ]
+  },
+  {
+    "id": "OIcpz4syMTlvmgVwSbWz",
+    "title": "Kinochronika Web",
+    "github-frontend-link": "https://github.com/Rehaan12345/kinochronika_web",
+    "github-link-backend": "  ",
+    "website": "http://kinochronika.com/",
+    "about": "Tatyana Bronstein is a Boston University film professor and local documentarian. I helped design her website, focusing on a streamlined UI, specifically promoting her newest movie, Woman in the Mirror. This site was made primarily with vanilla JavaScript, HTML, and CSS.",
+    "github-link-frontend": "https://github.com/Rehaan12345/kinochronika_web",
+    "images": [
+      "/images/kinochronika-web-0.webp",
+      "/images/kinochronika-web-1.webp",
+      "/images/kinochronika-web-2.webp"
+    ]
+  },
+  {
+    "id": "iUbMDZaIhhzCYkcSXdx1",
+    "title": "CRLS PathFinders",
+    "website": "https://www.crlspathfinders.com",
+    "about": "CRLS PathFinders is a website dedicated to bringing the resources of Cambridge, Massachusetts closer to students at my highschool in the city. This website was developed independently before becoming a collaborative effort with the help of a couple other students. This website allows CRLS students to find and join clubs, match with peer mentors, and access a comprehensive list of more than 50 scholarships, opportunities, and internships to choose from. This website served over 200 students in the first year of operation, and continues to thrive under new leadership. The website also enables admin access, allowing school administrators and club leaders to manage members and roles, and mentors to catalog and reflect on mentor experiences and gain community service hours. This site was made with a SvelteKit frontend, FastAPI backend, Firebase database, and Redis caching.",
+    "github-link-backend": "https://github.com/crlspathfinders/backend",
+    "github-link-frontend": "https://github.com/crlspathfinders/frontend",
+    "images": [
+      "/images/crls-pathfinders-0.webp",
+      "/images/crls-pathfinders-1.webp",
+      "/images/crls-pathfinders-2.webp",
+      "/images/crls-pathfinders-3.webp"
+    ]
+  },
+  {
+    "id": "yDD5bUZLpfN3Ehrw6XVi",
+    "title": "David Fichter Mural Tracker",
+    "github-link-frontend": "https://github.com/Rehaan12345/david-fichter-frontend-new",
+    "github-link-backend": "https://github.com/Rehaan12345/david-fichter-backend",
+    "about": "This website uses the OpenLayers JavaScript library to track local artist David Fichter’s murals around the city of Cambridge. I made this website because there was no place where these murals were tracked, making it hard to appreciate the work that David takes in creating these murals. This website is an interactive way to view David’s murals and catalog his 40 year career in Cambridge. This site was made with SvelteKit frontend, ExpressJS backend, and Firebase database.",
+    "website": "https://www.davidfichtermuralmap.com/",
+    "images": [
+      "/images/david-fichter-mural-tracker-0.webp",
+      "/images/david-fichter-mural-tracker-1.webp",
+      "/images/david-fichter-mural-tracker-2.webp"
+    ]
+  }
+]

@@ -1,75 +1,64 @@
 @import 'tailwindcss';
-@import "flowbite";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* 
-@plugin 'flowbite/plugin';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography'; */
-
-@custom-variant dark (&:where(.dark, .dark *));
-
+/* ---------------------------------------------------------------------------
+   Palette. Dark greens and blues over near-black, with white/grey type.
+   Deliberately low-saturation: the accents are structural (rules, markers,
+   focus) and are never used as large bright fills.
+   Contrast on --color-base: ink 16.8:1, muted 6.9:1, faint 4.6:1.
+   --------------------------------------------------------------------------- */
 @theme {
-	--color-primary-50: #fff5f2;
-	--color-primary-100: #fff1ee;
-	--color-primary-200: #ffe4de;
-	--color-primary-300: #ffd5cc;
-	--color-primary-400: #ffbcad;
-	--color-primary-500: #fe795d;
-	--color-primary-600: #ef562f;
-	--color-primary-700: #eb4f27;
-	--color-primary-800: #cc4522;
-	--color-primary-900: #a5371b;
+	/* surfaces */
+	--color-base: #0a0e0d;
+	--color-surface: #101614;
+	--color-elevated: #16201d;
+	--color-line: #1f2a27;
 
-	--color-secondary-50: #f0f9ff;
-	--color-secondary-100: #e0f2fe;
-	--color-secondary-200: #bae6fd;
-	--color-secondary-300: #7dd3fc;
-	--color-secondary-400: #38bdf8;
-	--color-secondary-500: #0ea5e9;
-	--color-secondary-600: #0284c7;
-	--color-secondary-700: #0369a1;
-	--color-secondary-800: #075985;
-	--color-secondary-900: #0c4a6e;
+	/* type */
+	--color-ink: #f2f5f4;
+	--color-muted: #9aa3a0;
+	--color-faint: #6b7370;
+
+	/* accents — dark green + dark blue */
+	--color-moss: #2f6b54;
+	--color-moss-dim: #1c3f32;
+	--color-harbor: #24557a;
+	--color-harbor-dim: #16324a;
 }
 
-@source "../node_modules/flowbite-svelte/dist";
-@source "../node_modules/flowbite-svelte-icons/dist";
-
-/* Global smooth transitions */
-* {
-	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 150ms;
-}
-
-/* Smooth scrolling */
 html {
 	scroll-behavior: smooth;
+	background-color: var(--color-base);
 }
 
-/* Custom scrollbar */
+body {
+	background-color: var(--color-base);
+	color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background: rgba(0, 0, 0, 0.1);
+	background: var(--color-base);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.3);
+	background: var(--color-line);
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(255, 255, 255, 0.5);
+	background: var(--color-moss-dim);
 }
 
-/* Selection styling */
 ::selection {
-	background-color: rgba(235, 87, 87, 0.3);
-	color: white;
+	background-color: var(--color-moss-dim);
+	color: var(--color-ink);
 }

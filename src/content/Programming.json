@@ -1,0 +1,38 @@
+[
+  {
+    "id": "BaNXCt5OTXeTMjYS866e",
+    "name": "FastAPI",
+    "Proficiency": "High",
+    "img": "/images/lang-fastapi.webp"
+  },
+  {
+    "id": "SY3I77oY0f3Btx5ay6yc",
+    "name": "Svelte",
+    "Proficiency": "High",
+    "img": "/images/lang-svelte.webp"
+  },
+  {
+    "id": "YLdmjn04xqk0TSWJZIu8",
+    "name": "Python",
+    "Proficiency": "High",
+    "img": "/images/lang-python.webp"
+  },
+  {
+    "id": "ZDwMw2rWkpfv13jmLj9Q",
+    "name": "JavaScript",
+    "img": "/images/lang-javascript.webp",
+    "Proficiency": "High"
+  },
+  {
+    "id": "hjCtFRPGReKFHqTY5ktV",
+    "name": "Java",
+    "Proficiency": "Medium",
+    "img": "/images/lang-java.webp"
+  },
+  {
+    "id": "zKiuuoYJDvrFeRQ8qPiA",
+    "name": "ExpressJS",
+    "Proficiency": "Medium",
+    "img": "/images/lang-expressjs.webp"
+  }
+]

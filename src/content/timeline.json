@@ -1,0 +1,235 @@
+[
+  {
+    "period": "April 2020 – May 2021",
+    "items": [
+      { "text": "COVID started, end of 7th grade." },
+      {
+        "text": "Started first business, rehaan_designs, sewing hand made face masks at local pop up shops and built an online presence",
+        "children": [
+          { "text": "$2k in sales over the course of the year" }
+        ]
+      },
+      { "text": "Started flying drones for fun" }
+    ]
+  },
+  {
+    "period": "September 2021 – May 2022",
+    "items": [
+      { "text": "First year of high school, wanted to pursue fashion design, interested in starting a business." },
+      { "text": "Tried reselling shoes. Lost money. Spent money." },
+      { "text": "Worked at an ice cream store" },
+      { "text": "Bought my first real drone (DJI Mini 2)" }
+    ]
+  },
+  {
+    "period": "September 2022 – April 2023",
+    "items": [
+      {
+        "text": "Joined the Cambridge Youth Council",
+        "children": [
+          { "text": "Working with local gov to advocate for youth-related policies" },
+          { "text": "Advocated for free menstrual products in public spaces" }
+        ]
+      },
+      {
+        "text": "Took a Harvard Extension School class called Grand Strategy in International Relations and US Foreign Policy",
+        "children": [
+          { "text": "Loved it" }
+        ]
+      },
+      {
+        "text": "Took AP Computer Science A",
+        "children": [
+          { "text": "Learned Java, fell in love with computer programming" }
+        ]
+      },
+      {
+        "text": "April: Had back surgery, out of school for 2 weeks",
+        "children": [
+          {
+            "text": "Watched the free online lectures for the course CS50 everyday. Learned C, Python, and Flask.",
+            "children": [
+              { "text": "My first intro to web development" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "period": "Summer '23",
+    "items": [
+      { "text": "Turned the mini Flask app into my first website: building a club portal for my school" },
+      { "text": "Fired from an escape room, worked at a pizza restaurant" },
+      { "text": "Started a commercial drone business with a friend. Got scammed a couple times." }
+    ]
+  },
+  {
+    "period": "September 2023 – May 2024",
+    "items": [
+      { "text": "Started Drone Club at high school with a couple friends, teaching kids how to fly drones" },
+      {
+        "text": "Co-Chair of Cambridge Youth Council",
+        "children": [
+          { "text": "Became a youth advocate on Family Policy Council (the powers of Cambridge)" },
+          { "text": "Worked on youth mental health awareness campaign" }
+        ]
+      },
+      { "text": "Began working on a new project with a friend: CRLS PathFinders, connecting kids in my high school to resources in my city (Cambridge, MA)" },
+      { "text": "Continued the club portal website, learned about web frameworks and full stack development" }
+    ]
+  },
+  {
+    "period": "Summer '24",
+    "items": [
+      { "text": "Built out the PathFinders website in full (no AI), with auth, db, caching, SSR, design, full stack, all of that. Ready for users in the beginning of the year." },
+      { "text": "Continued drone business, filmed weddings, car commercials. Slow, but finally profitable." }
+    ]
+  },
+  {
+    "period": "September 2024 – May 2025",
+    "items": [
+      { "text": "Applied, rejected, and accepted to colleges (Go Trojans!)" },
+      {
+        "text": "Final year as Co-Chair of Cambridge Youth Council",
+        "children": [
+          { "text": "Represented Cambridge at the annual National League of Cities conference in Tampa, Florida. Won 3rd place and $2k for a video I directed and edited showing where we see the future of cities in 100 years. Proceeds went towards the youth council." },
+          {
+            "text": "Planned, built, and helped design mural for high school",
+            "children": [
+              { "text": "Made a documentary about the whole process" }
+            ]
+          }
+        ]
+      },
+      { "text": "Officially launched PathFinders, hosted events, built up the website." },
+      {
+        "text": "Formed a web dev team to keep the website live",
+        "children": [
+          { "text": "Taught 3 younger students how to manage and upkeep the website" }
+        ]
+      },
+      { "text": "Graduated high school" },
+      { "text": "Started a documentary about religion in the 21st century." }
+    ]
+  },
+  {
+    "period": "Summer '25",
+    "items": [
+      {
+        "text": "Got a driver's license, expanded drone business.",
+        "children": [
+          { "text": "Filmed events, weddings, finally made some decent money" }
+        ]
+      },
+      { "text": "Built portfolio website for college" },
+      { "text": "Built website for my neighbor who is a muralist, mapping his murals in Cambridge" },
+      { "text": "Fixed a friend's mom's documentary portfolio website" },
+      { "text": "Continue filming religion documentary" }
+    ]
+  },
+  {
+    "period": "August 2025 – December 2025",
+    "items": [
+      { "text": "Started college" },
+      {
+        "text": "Joined USC's most exclusive startup accelerator, TroyLabs, on the Tech division",
+        "children": [
+          { "text": "My first real exposure to structured entrepreneurship" },
+          { "text": "(Kind of) worked on an AI bookmark startup" },
+          { "text": "Met amazing people" },
+          { "text": "Now I want to build a startup" }
+        ]
+      },
+      {
+        "text": "Finally learned about AI and all the things",
+        "children": [
+          { "text": "Skeptical about AI coding" }
+        ]
+      },
+      {
+        "text": "Won first place at a hackathon with 2 friends.",
+        "children": [
+          { "text": "Built my first civic tech tool; called it MapCzar" }
+        ]
+      },
+      { "text": "Helping start iOSC, USC's very first (and only) iOS mobile app development club with friends" },
+      {
+        "text": "Networked at LA Tech Week",
+        "children": [
+          {
+            "text": "Met really cool people",
+            "children": [
+              { "text": "Helped a friend build his fragrance e-commerce site" }
+            ]
+          }
+        ]
+      },
+      { "text": "Began building a team of people to help me build my civic tech startup" }
+    ]
+  },
+  {
+    "period": "January 2026 – May 2026",
+    "items": [
+      { "text": "Back from winter break, hitting the ground running" },
+      { "text": "Worked for (and stopped working for) an AI + Language startup" },
+      { "text": "Finally convinced on AI coding" },
+      {
+        "text": "Another semester with TroyLabs",
+        "children": [
+          {
+            "text": "Worked on AI healthcare startup",
+            "children": [
+              { "text": "Cool people" }
+            ]
+          }
+        ]
+      },
+      { "text": "Found amazing developers for CityWise (not MapCzar any longer)" },
+      { "text": "Partnered with AI for Good club at USC for research" },
+      { "text": "Officially launched iOSC" },
+      {
+        "text": "Spoke at dozen or so neighborhood councils around LA",
+        "children": [
+          { "text": "Trying to see how residents thought about information access" },
+          { "text": "Building for them, not for me." }
+        ]
+      },
+      { "text": "Started working for Crosstown Media, a journalism startup based out of USC" },
+      { "text": "Launched CityWise" },
+      { "text": "Officially incorporated Visic Tech" },
+      { "text": "Started a documentary about a Chinese street stall right outside campus" }
+    ]
+  },
+  {
+    "period": "Summer '26",
+    "items": [
+      { "text": "Back in hometown of Cambridge" },
+      {
+        "text": "Networked at Boston Tech Week",
+        "children": [
+          { "text": "Met some cool people" }
+        ]
+      },
+      { "text": "Building relationships with Cambridge gov through Youth Council connections" },
+      { "text": "Met and called with many cool people building civic tech, AI, local gov, or mapping projects around the world" },
+      {
+        "text": "Conducted informal research with USC PhD student about creating conversational tool for LA Councilmembers",
+        "children": [
+          { "text": "Conducted dozens of user interviews for this" }
+        ]
+      },
+      {
+        "text": "Vibe coded civic tech projects and posted them on LinkedIn",
+        "children": [
+          { "text": "Learned about RAG, MCP" },
+          { "text": "Started reading some research papers about latest advancements in AI" }
+        ]
+      },
+      { "text": "Planning a hackathon for LA Tech Week" },
+      { "text": "Expanded and built new features for CityWise" },
+      { "text": "Continued work for Crosstown Media" },
+      { "text": "Building network of civic engineers" }
+    ]
+  }
+]
