@@ -1,0 +1,35 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+
+	"framework": null,
+	"installCommand": "npm install",
+	"buildCommand": "npm run build",
+	"outputDirectory": "build",
+
+	"headers": [
+		{
+			"//": "SvelteKit content-hashes everything under _app/immutable, so these filenames change whenever their contents do. They can safely be cached forever.",
+			"source": "/_app/immutable/(.*)",
+			"headers": [
+				{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+			]
+		},
+		{
+			"//": "Images are not content-hashed, so they get a shorter TTL but may be served stale while revalidating.",
+			"source": "/images/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=86400, stale-while-revalidate=604800"
+				}
+			]
+		},
+		{
+			"source": "/(.*)",
+			"headers": [
+				{ "key": "X-Content-Type-Options", "value": "nosniff" },
+				{ "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+			]
+		}
+	]
+}
